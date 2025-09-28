@@ -72,7 +72,7 @@ public class MusicOrganizer
                 System.out.println(filename);
                 matchFound = true;
             }
-            if(matchFound == falses){
+            if(matchFound == false){
                 System.out.println("No such file is matched!");
             }
         }
