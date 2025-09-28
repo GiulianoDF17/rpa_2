@@ -15,4 +15,5 @@ Create a MusicOrganizer object on the object bench.
 Use its methods to add, remove, and play files. The listAllFiles
 method prints a list of the collection.
 
-25. 
+25. If there was no matching file then what would've happened was that nothing was printed since the print value is (filename).
+
