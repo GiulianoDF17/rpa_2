@@ -26,9 +26,9 @@ public class MusicOrganizer
      * Add a file to the collection.
      * @param filename The file to be added.
      */
-    public void addFile(String filename)
+    public void addFile(String filename, String artist)
     {
-        files.add(filename);
+        files.add(filename + "by" + " " + artist);
     }
     
     /**
@@ -65,15 +65,16 @@ public class MusicOrganizer
         }
     }
     
-    public void listMatching(String searchString){
+    public void artistSongSample(String artistName){
         boolean matchFound = false;
         for(String filename: files){
-            if(filename.contains(searchString)){
+            if(filename.contains(artistName)){
                 System.out.println(filename);
+                player.playSample(filename);
                 matchFound = true;
             }
             if(matchFound == false){
-                System.out.println("No such file is matched!");
+                System.out.println("No such song by" + " " + artistName + " " + "was found in the list!");
             }
         }
     }    
