@@ -66,9 +66,14 @@ public class MusicOrganizer
     }
     
     public void listMatching(String searchString){
+        boolean matchFound = false;
         for(String filename: files){
             if(filename.contains(searchString)){
                 System.out.println(filename);
+                matchFound = true;
+            }
+            if(matchFound == falses){
+                System.out.println("No such file is matched!");
             }
         }
     }    
