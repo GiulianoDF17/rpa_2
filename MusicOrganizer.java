@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A class to hold details of audio files.
@@ -147,5 +148,10 @@ public class MusicOrganizer
             valid = true;
         }
         return valid;
+    }
+    public void exerciseTwentyFive(){
+        int[] numbers = {67, 15, 76, 72, 6, 7};
+        System.out.println(Arrays.toString(numbers));
+        
     }
 }
