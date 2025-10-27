@@ -159,7 +159,12 @@ public class MusicOrganizer
         int[] subArray = Arrays.copyOfRange(numbers, 0, 5);
         System.out.println("Range 0-5" + Arrays.toString(subArray));
         
+        int index = Arrays.binarySearch(numbers, 67);
+        System.out.println("number 67 is index" + index);
         
+        int[] filledArray = new int[7];
+        Arrays.fill(filledArray, 6);
+        System.out.println("Filled: " + Arrays.toString(filledArray));
         
     }
 }
