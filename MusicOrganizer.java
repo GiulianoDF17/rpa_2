@@ -153,5 +153,13 @@ public class MusicOrganizer
         int[] numbers = {67, 15, 76, 72, 6, 7};
         System.out.println(Arrays.toString(numbers));
         
+        Arrays.sort(numbers);
+        System.out.println("Sorted numbers:" + Arrays.toString(numbers));
+        
+        int[] subArray = Arrays.copyOfRange(numbers, 0, 5);
+        System.out.println("Range 0-5" + Arrays.toString(subArray));
+        
+        
+        
     }
 }
