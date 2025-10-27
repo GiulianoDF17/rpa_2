@@ -154,13 +154,13 @@ public class MusicOrganizer
         System.out.println(Arrays.toString(numbers));
         
         Arrays.sort(numbers);
-        System.out.println("Sorted numbers:" + Arrays.toString(numbers));
+        System.out.println("Sorted numbers: "  + Arrays.toString(numbers));
         
         int[] subArray = Arrays.copyOfRange(numbers, 0, 5);
-        System.out.println("Range 0-5" + Arrays.toString(subArray));
+        System.out.println("Range 0-5 " + Arrays.toString(subArray));
         
         int index = Arrays.binarySearch(numbers, 67);
-        System.out.println("number 67 is index" + index);
+        System.out.println("number 67 is index " + index);
         
         int[] filledArray = new int[7];
         Arrays.fill(filledArray, 6);
